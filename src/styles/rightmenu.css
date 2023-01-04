@@ -1,0 +1,8 @@
+#Rightmenu{
+    width: 100px;
+    min-width: 100px;
+    height: 100vh;
+    background-color: rgb(41, 43, 43, 0.8);
+    border-left: 1px solid rgb(126, 123, 123) ;
+    color: aliceblue;
+}

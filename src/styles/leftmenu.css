@@ -1,0 +1,199 @@
+#leftmenu{
+    color: aqua;
+    width: 230px;
+    height: 100vh;
+    background-color: rgb(70, 68, 68);
+}
+#topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    /* border: 2px solid rgb(233, 213, 213); */
+}
+#topbar p{
+    color: #f1f1f1;
+}
+#topbar i:nth-of-type(2){
+    padding-right: 4px;
+}
+#topbar i:nth-of-type(1){
+    padding-left: 6px;
+    font-size: 24px;
+}
+#search{
+    width: 100%;
+    position: relative;
+    height: 30px;
+    /* padding: 20px 0; */
+    margin-top: 10px;
+    /* border: 2px solid rgb(233, 213, 213); */
+
+}
+#search input{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 2px;
+    padding-left: 28px;
+    border-radius: 8px;
+}
+
+#search i {
+    position: absolute;
+    background-color: rgb(68 68 68);
+    width: 26px;
+    height: 86%;
+    margin: auto;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#menubar{
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    padding-left: 5px;
+    
+}
+#menubar >p{
+    color: #f1f1f1;
+}
+#menuitem{
+    /* border: 1px solid wheat; */
+    padding: 4px;
+    margin-left: 8px;
+    position: relative;
+}
+#menuitem p::before  {
+    content: '';
+    width: 0px;
+    height: 90%;
+    background: rgb(43, 201, 77);
+    /* color: blue; */
+    position: absolute;
+    margin-left: -2px;
+    left :-2px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 2;
+  
+}
+#menuitem p:hover::before{
+    width: 5px;
+     cursor: pointer;
+     transition:  .3s;
+}
+#menuitem:hover{
+   
+     cursor: pointer;
+     transition: all 1s;
+}
+.active {
+    color: #f1f1f1;
+    /* transform: all 0.3s; */
+}
+#menuitem p.active::before{
+    width: 5px;
+     cursor: pointer;
+     transition:  .3s;
+}
+
+#menuitem p{
+ display: inline-block;
+ margin: 0 10px;
+}
+#playlisttitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2px 5px;
+    color: #f1f1f1;
+}
+#playlistSongs{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   /* border: 1px solid white */
+}
+#playlistSongs i{
+   font-size: 19px;
+}
+#playlist{
+    height: 210px;
+    padding: 2px;
+    /* border: 1px solid white; */
+   
+    position: relative;
+}
+#playListScroll{
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#track{
+    margin-top: 10px;
+    padding: 3px;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+#trackTitle{
+    height: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+#trackTitle i{
+    font-size: 2.5rem;
+}
+#songname{
+   display: flex;
+    flex-direction: column;
+}
+#songname p{
+    margin: 0;
+    /* padding: 1px; */
+    margin-left: 10px;
+    /* color: brown; */
+}
+#songname p:nth-of-type(2){
+    font-size: 12px;
+    text-align: center;
+}
+#songname p:nth-of-type(1){
+   color: #f1f1f1;
+}
+#trackProgress{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#trackProgress i{
+   font-size: 20px;
+   color: #f1f1f1;
+}
+#trackProgress input{
+  width: 57%;
+  color: aqua;
+  position: relative;
+  z-index: 2;
+  display: block;
+  
+}
+#trackProgress input::before{
+    position: absolute;
+    content: " ";
+    width: 57%;
+    height: 45%;
+    background: rgb(38, 0, 255);
+    top: 6px;
+    left: 0px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
