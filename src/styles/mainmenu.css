@@ -103,8 +103,8 @@
 }
 #rightbottom{
     margin-right: 10px;
-   
-    width: 21%;
+   border:1px solid white;
+    width: 200px;
     display: flex;
     justify-content: space-between;
 }
@@ -224,6 +224,11 @@
     text-align: center;
     justify-content: space-around;
     cursor: pointer;
+}
+#songName p{
+  /* border: 1px solid white; */
+    width: 30%;
+   
 }
 
 #songlikes {

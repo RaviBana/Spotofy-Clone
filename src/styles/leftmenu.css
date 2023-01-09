@@ -197,3 +197,48 @@
     z-index: -1;
   }
 
+@media screen and (max-width:1000px){
+    #topbar p, i:nth-of-type(2){
+        display: none;
+    }
+    #topbar i:nth-of-type(1){
+       font-size: 40px;
+       margin: auto;
+    }
+    #search{
+        display: none;
+    }
+    #menuitem p{
+        display: none;
+    }
+    #menuitem i{
+       font-size: x-large;
+       margin: 20px 2px ;
+       /* border: 1px solid white; */
+    }
+    #menubar p{
+        display: none;
+    }
+    #playlist{
+        display: none;
+    }
+    #track{
+        display: none;
+    }
+    #menubar{
+        /* border: 1px solid white; */
+        margin-top: 10px;
+        padding-left: 5px;
+        /* border: 1px solid white; */
+        width: 90%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    #leftmenu{
+        width: 80px;
+    }
+}
