@@ -2,12 +2,14 @@ import React,{useEffect, useRef, useState} from 'react';
 import { BsHeartFill, BsHeart, BsDownload } from 'react-icons/bs';
 import {AiOutlineShareAlt, AiOutlineBackward, AiOutlineFastBackward, AiOutlinePlayCircle, AiOutlinePause, AiFillForward, AiOutlineFastForward } from 'react-icons/ai';
 import covers from '../covers/1.jpg';
+import { Songs } from './songs';
+
 
 
 const Player = (props) => {
    const [playing, setPlaying] = useState(false)
    const [duration, setDuration] = useState(0)
-    const [current, setCurrent] = useState(0)
+   const [current, setCurrent] = useState(0)
 
    const playerAudio = useRef()
    const progressBar = useRef()
@@ -26,7 +28,7 @@ const Player = (props) => {
 
 
 
-   useEffect(()=>{
+useEffect(()=>{
     setPlaying(playing)
     console.log('withoutprops')
     progressBar.current.value = 0
@@ -46,6 +48,7 @@ const Player = (props) => {
    }
 
    function playSong(){
+    console.log('current', playerAudio)
         const playValue = !playing
         if(playValue){
             playerAudio.current.play()
@@ -58,6 +61,10 @@ const Player = (props) => {
             console.log( playerAudio.current.currentTime)
         }
         setPlaying(playValue)
+   }
+
+   function nextsong(){
+            
    }
 
    const whilePlaying = () =>{
@@ -95,8 +102,8 @@ const Player = (props) => {
                            <i><BsDownload /></i>
                         </div>
                         <div id='play-btn'>
-                            <i><AiOutlineFastBackward /></i>
-                            <i><AiOutlineBackward /></i>
+                            {/* <i><AiOutlineFastBackward /></i> */}
+                            <i><AiOutlineBackward onClick={props.changePrevSong}/></i>
                             {  <div id='play-pause' onClick={playSong}>
                           
                           {(playing)? (<i><AiOutlinePause/></i>):<i><AiOutlinePlayCircle /></i>} 
@@ -105,8 +112,8 @@ const Player = (props) => {
                              </div>
                             }
                            
-                            <i><AiFillForward /></i>
-                            <i><AiOutlineFastForward /></i>
+                            <i><AiFillForward onClick={props.changeNextSong} /></i>
+                            {/* <i><AiOutlineFastForward /></i> */}
                         </div>
                         <i><AiOutlineShareAlt/></i>
 

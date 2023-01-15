@@ -98,12 +98,15 @@
   }
 
 #leftbottom{
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /* border:1px solid white; */
 }
 #rightbottom{
     margin-right: 10px;
-   border:1px solid white;
+   /* border:1px solid white; */
     width: 200px;
     display: flex;
     justify-content: space-between;
@@ -130,7 +133,7 @@
 }
 #navbar ul li{
     margin: 11px 0;
-    width: 8%;
+    width: 50px;
     /* color: #848484; */
     font-size: 13px;
     list-style: none;
@@ -142,7 +145,7 @@
     position: absolute;
     content: '';
     bottom: -5px;
-    left: 20px;
+    left: 9px;
     width: 0;
     height: 4px;
     /* color: #1e1e8b; */
@@ -170,7 +173,8 @@
     margin-top: -17px;
     padding: 0;
     width: 100%;
-    height: 250px;
+    height: 40vh;
+    overflow-y: scroll;
     /* border: 1px solid white; */
     background-color: rgb(78, 77, 77, 0.8);
     color: #f1f1f1;
@@ -210,12 +214,13 @@
 #songlist{
     display: flex;
     margin-top: 10px;
-    
+    /* border: 1px solid wheat; */
+    align-items: center;
 }
 #scrollsong{
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 200px;
+    height: 100%;
     padding: 5px;
 }
 #songName{
@@ -250,9 +255,10 @@
     margin-right: 5px;
 }
 #player{
+    padding-top: 15px;
     width: 100%;
-    height: 100px;
-    /* border: 1px solid white; */
+    height: 200px;
+    /* border: 1px solid rgb(183, 25, 25); */
     background-color: rgb(71, 69, 69, 0.8);
 }
 #player1{

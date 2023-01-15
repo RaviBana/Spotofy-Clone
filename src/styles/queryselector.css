@@ -1,0 +1,186 @@
+@media screen and (max-width:860px){
+    #Rightmenu{
+        display: none;
+    }
+    #leftmenu{
+        color: aqua;
+        width: 60px;
+        height: 100vh;
+        background-color: rgb(70, 68, 68);
+    }
+    #songName{
+        display: flex;
+        width: 55%;
+        text-align: center;
+        justify-content: space-around;
+        cursor: pointer;
+        /* border: 1px solid white; */
+    }
+    #songName p{
+        font-size: 14px;
+        width: 30%;
+       
+    }
+    #songlikes {
+        /* border: 1px solid white; */
+       font-size: 12px;
+    }
+    #firstbottom h1{
+        font-size: 18px;
+    }
+    #rightbottom{
+        width: 190px;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    #songtitle{
+        font-size: 12px;
+    }
+    #songName p:nth-of-type(2){
+       display: none;
+       
+    }
+    #songName p:nth-of-type(1){
+        font-size: 12px;
+      /* border: 1px solid white; */
+        width: 100%;
+        /* border: 1px solid white; */
+       
+    }
+    #songlikes .listen{
+        display: none;
+        /* visibility: hidden; */
+        /* display: none; */
+        /* display: flex;
+        align-items: center;
+        margin-left: 5px; */
+     }
+     /* #rightbottom{
+        width: 190px;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+    } */
+    #secondbottom{
+        font-size: 6px;
+    }
+    #rightbottom{
+        margin-right: 10px;
+       /* border:1px solid white; */
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px;
+    }
+    #rightbottom a{
+        color: #f1f1f1;
+        text-decoration: none;
+        /* border: 1px solid white; */
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 5px 17px; */
+        /* margin: 2px; */
+    }
+    #rightbottom a i{
+        font-size: 8px;
+        /* margin: 0px 6px 0px 0px; */
+    }
+    #firstbottom{
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* width: 500px; */
+        /* margin-left: 5px; */
+        /* border: 1px solid rgb(93, 14, 167); */
+        /* box-sizing: border-box; */
+        /* position: relative; */
+        border-radius: 20px;
+    
+    }
+    #secondbottom{
+        /* border: 1px solid rgb(165, 23, 23); */
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+    }
+    #leftbottom{
+        width: 150px;
+    }
+    #firstbottom h1{
+        width: 25%;
+     }
+     #imgDiv{
+        color: blue;
+        position: relative;
+        width: 30px;
+        /* border: 1px solid rgb(165, 23, 23); */
+    }
+    /* #leftbottom{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border:1px solid white;
+    } */
+    #songImg{
+        width: 50px;
+        height: 40px;
+        position: relative;
+        /* border: 1px solid white; */
+        border-radius: 40px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    #songImg img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit:cover;
+        border-radius: 40px;
+        /* overflow: hidden; */
+    }
+
+    
+}
+
+@media screen and (max-width:390px){
+    #rightbottom{
+        /* margin-right: 10px; */
+       /* border:1px solid white; */
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2px;
+        margin-top: 40px;
+        padding-left: 20px;
+        
+    }
+    #rightbottom a:nth-of-type(1){
+        display: none;
+     }
+    #secondbottom{
+        /* display:flex; */
+        /* height: 400px; */
+        /* width: 400px; */
+       flex-direction: column;
+         align-items: center;
+        justify-content: space-around; 
+        /* border: 3px solid black; */
+    }
+    #secondbottom p{
+        display:inline-block;
+        /* flex-direction: row; */
+        /* border: 3px solid black; */
+    }
+}

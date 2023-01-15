@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/leftmenu.css'
+import '../styles/queryselector.css'
 import {FaSpotify  } from 'react-icons/fa'
 import {BsThreeDots,BsSearch } from 'react-icons/bs'
 import LeftMenuItem from './LeftMenuItem';

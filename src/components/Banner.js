@@ -21,14 +21,14 @@ const Banner = () => {
                                     <h1>A-Ha</h1>
                                     <div id='imgDiv'>
                                     <img src={check} alt="" />
-                                    </div>
+                                </div>
                                    
                                 </div>
 
                                 <div id='secondbottom'>
                                     <i><BsHeadphones /></i>
                                     <p>11,130,1245</p>
-                                    <p>monthly listeners</p>
+                                    <p>listeners</p>
                                 </div>
                 </div>
 
